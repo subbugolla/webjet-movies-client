@@ -1,12 +1,35 @@
-# React + Vite
+# WebjetMoviePortal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Webjet Movie Portal built using .Net 8 backend APIs and React frontend
 
-Currently, two official plugins are available:
+## Technology Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frontend (React)
+- TypeScript
+- Redux Toolkit for State Management
+- Material-UI for Components
+- React Router for Navigation
+- Formik & Yup for Form Validation
+- Axios for API Calls
 
-## Expanding the ESLint configuration
+## Running the Application
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ Run the frontend:
+   - npm install
+   - npm start dev
+   
+## Things to improve
+
+### UI
+
+- Implement Config service to store URLs and other config values
+- Implement Redux and Lazy loading
+- Unit testing 
+- Can implement paging and navigation as the data real-time grows
+
+## Assumptions
+
+- Api developed with an opportunity to move the filtering and business logic to identify cheapest price
+- In-Memory Cache Used for temporary caching purposes
+- Data will be reset when the application restarts
+- Secret is in the appsettings which has to be secured(using keyvault or database)
